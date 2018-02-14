@@ -1,5 +1,5 @@
 <?php
-
+use \App\User;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Post.index');
 });

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto|Rubik');
+.btn-outline-success__yellow, .btn-outline-success__yellow:focus{
+    color: #FFEB3B !important;
+    border-color: #FFEB3B !important;
+}
+.navbar-brand__yellow{
+    color: #ffffffbd !important;
+    font-family: 'Roboto', sans-serif;
+}
+.starter-template{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1em;
+}
+.lead{
+    font-family: 'Rubik', sans-serif;
+}
