@@ -15,10 +15,10 @@
 
     <form method="#" action="#">
         <div class="form-group">
-            <input class="form-control" type="text" placeholder="http://..."/>
+            <input class="form-control" type="text" name="url" placeholder="http://..."/>
         </div>
         <div class="form-group">
-            <input class="btn-block btn-info" type="submit" value="Submit"/>
+            <input class="btn-block btn-info btn-info--customized" type="submit" value="Submit"/>
         </div>
     </form>
 </main><!-- /.container -->

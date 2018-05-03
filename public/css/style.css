@@ -14,3 +14,10 @@
 .lead{
     font-family: 'Rubik', sans-serif;
 }
+.btn-info--customized{
+    width: 25% !important;
+    margin: auto;
+}
+.btn-info--customized:hover{
+    cursor: pointer;
+}
