@@ -11,6 +11,21 @@ use \App\User;
 |
 */
 
-Route::get('/', function () {
-    return view('Post.index');
-});
+Route::view('/', 'Post.index')->name('homePage');
+
+//Route::match(['get', 'post'], '/link', [
+//    'uses'  =>  'LinkController@create',
+//    'as'    =>  'createLink'
+//]);
+
+Route::post('/link', [
+    'uses'  =>  'LinkController@create',
+    'as'    =>  'createLink'
+]);
+
+Route::get('/link/{id}', [
+    'uses'  =>  'LinkController@read',
+    'as'    =>  'readLink'
+])->where(
+    'id', '[0-9]+'
+);

@@ -23,7 +23,7 @@
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-light fixed-top" style="background-color: #2196f3 !important;">
-    <a class="navbar-brand navbar-brand__yellow" href="#">INDIAN GHOST</a>
+    <a class="navbar-brand navbar-brand__yellow" href="{{route('homePage')}}">shortcURL</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,7 +31,7 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{route('homePage')}}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Portfoli</a>

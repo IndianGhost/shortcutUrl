@@ -21,3 +21,7 @@
 .btn-info--customized:hover{
     cursor: pointer;
 }
+.url-not-found{
+    padding: 5% 0;
+    font-size: 3em;
+}
