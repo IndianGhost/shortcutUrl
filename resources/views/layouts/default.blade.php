@@ -18,6 +18,7 @@
     <!-- Custom styles for this template -->
     <link href="{{asset('css/starter-template.css')}}" rel="stylesheet" type="text/css"/>
     <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css"/>
+    @yield('style')
 </head>
 
 <body>
@@ -64,5 +65,6 @@
 <script>window.jQuery || document.write('<script src="{{asset('js/jquery-slim.min.js')}}"><\/script>')</script>
 <script src="{{asset('js/popper.min.js')}}"></script>
 <script src="{{asset('js/bootstrap-material-design.min.js')}}"></script>
+@yield('javascript')
 </body>
 </html>

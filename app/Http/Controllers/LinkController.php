@@ -13,6 +13,11 @@ class LinkController extends Controller
         //Affectation de la valeur saisie par l'utilisateur a une variable (simplification)
         $url = Input::get('url');
 
+        //exception
+        if($url === null){
+            return view('Post.linkNotFound');
+        }
+
         //Verifier si l'URL existe deja dans la base de donnees
         $exist = Link::where('url', '=', $url)->exists();
 
@@ -29,6 +34,7 @@ class LinkController extends Controller
         $id = Link::where('url', $url)->value('id');
 
         return view('Post.shortcut', compact('id', 'url'));
+
     }
 
     public function read($id){
