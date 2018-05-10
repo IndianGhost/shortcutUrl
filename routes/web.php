@@ -13,7 +13,9 @@ use \App\User;
 
 Route::view('/', 'Post.index')->name('homePage');
 
-Route::view('/link', 'Post.linkNotFound')->name('linkNotFound');
+Route::get('/link', function(){
+	return view('Post.linkNotFound');
+});
 
 Route::post('/link', [
     'uses'  =>  'LinkController@create',
