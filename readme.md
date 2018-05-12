@@ -26,7 +26,7 @@ The last command is to migrate the database :
 ```
 php artisan migrate
 ```
-Now that you did the migration, everything's is alright. Don't you trust me?
+Now that you did the migration, everything's alright. Don't you trust me?
 Ok, let's run the server ;)
 ```
 php artisan serve
@@ -34,6 +34,9 @@ php artisan serve
 
 # Inteded users
 Generally anybody can use this project but I think it will be helpful for software students or beginner php developers (I hope so).
+
+# Demonstration
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/cs6Cw1Vxtaw/0.jpg)](https://www.youtube.com/watch?v=cs6Cw1Vxtaw)
 
 # Copyright and license
 Copyright 2018 Achraf BELLAALI **Shortcut URL** is a free open-source project. The code is released under [The MIT LICENSE](https://github.com/IndianGhost/shortcutUrl/blob/master/LICENSE) you can do whatever you want with it !
