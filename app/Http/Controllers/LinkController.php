@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace shortcuturl\Http\Controllers;
 
-use App\Link;
+use shortcuturl\Link;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 

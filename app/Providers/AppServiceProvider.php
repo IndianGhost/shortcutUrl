@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace shortcuturl\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

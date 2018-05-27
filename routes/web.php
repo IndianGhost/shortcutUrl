@@ -13,9 +13,7 @@ use \App\User;
 
 Route::view('/', 'Post.index')->name('homePage');
 
-Route::get('/link', function(){
-	return view('Post.linkNotFound');
-});
+Route::view('/link', 'Post.linkNotFound')->name('linkNotFound');
 
 Route::post('/link', [
     'uses'  =>  'LinkController@create',
@@ -28,3 +26,6 @@ Route::get('/link/{id}', [
 ])->where(
     'id', '[0-9]+'
 );
+Auth::routes();
+
+Route::get('/admin', 'AdminController@index')->name('admin');
