@@ -6,7 +6,7 @@
 
 @section('main')
     <main role="main" class="container">
-
+        
         <div class="starter-template">
             <h1>The best &amp; easiest way to shortcut an URL <span class="fa fa-heart"></span> !</h1>
             <p class="lead">

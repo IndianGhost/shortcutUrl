@@ -24,11 +24,15 @@
             <a href="https://github.com/IndianGhost">Indian Ghost</a> &copy; 2018.
         </p>
     </div>
-
+    @if( isset($error) )
+    <p class="alert alert-danger">
+        Unfortunately, The URL you had just inserted is <strong>not valid</strong> !
+    </p>
+    @endif
     <form method="post" action="{{route('createLink')}}" class="js-validation">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="form-group">
-            <input class="form-control" type="text" name="url" placeholder="http://..." required/>
+            <input class="form-control" type="text" name="url" placeholder="http://..." autofocus required/>
         </div>
         <div class="form-group">
             <input class="btn-block btn-info btn-info--customized" type="submit" value="Submit"/>

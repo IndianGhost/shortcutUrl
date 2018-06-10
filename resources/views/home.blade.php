@@ -21,9 +21,6 @@
                         <thead>
                             <tr>
                                 <th class="text-center">
-                                    Id
-                                </th>
-                                <th class="text-center">
                                     URL
                                 </th>
                                 <th class="text-center">
@@ -37,9 +34,6 @@
                         <tbody>
                             @foreach($links as $link)
                             <tr>
-                                <td>
-                                    {{$link['id']}}
-                                </td>
                                 <td>
                                     <a href="{{route('readLink', $link['id'])}}" title="Test the link {{$link['id']}} !" target="_blank">
                                         {{$link['url']}}
